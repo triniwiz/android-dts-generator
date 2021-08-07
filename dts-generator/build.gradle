@@ -76,6 +76,8 @@ jar {
         attributes 'Specification-Version': version
         attributes 'Manifest-Version': version
     }
+
+    duplicatesStrategy = 'include'
 }
 
 task copyJarToBuildTools (type: Copy) {
